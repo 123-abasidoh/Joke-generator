@@ -12,18 +12,17 @@ body{
     background: linear-gradient(135deg, #4b576c, #0d0d0efe);
     width: 50%;
     padding: 50px 40px;
-    /* background-color: #15161a ; */
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 5px;
-    box-shadow: 20px 20px 40px rgba(97, 63,0,0.4);
+    box-shadow: 20px 20px 40px rgba(97, 63,0,0.4); text-align: center;
 }
 span{
     display: block;
-    text-align: center;
-    width:100%;
+   max-width: 100%;
+   margin: auto;
     font-size: 100px;
     
 }
@@ -55,3 +54,23 @@ button{
     cursor: pointer;
      
 }
+
+@media only screen and (max-width: 768px  ) {
+    body{
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        padding: 35%;
+
+    }
+    .wrapper{
+        width: 90%;
+    }
+    span{
+        width: 4px;
+    }
+}
+
+
+
+
